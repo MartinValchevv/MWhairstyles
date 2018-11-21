@@ -16,12 +16,13 @@ plugins:
   - jekyll-feed
 
 
-#  exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - .gitignore
-#   - scss
-#   - gulpfile.js
-#   - package.json
-#   - package-lock.json
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - docs
+  - node_modules
+  - scss
+  - .gitignore
+  - package-lock.json

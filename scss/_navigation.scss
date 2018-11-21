@@ -1,0 +1,66 @@
+
+  .navbar {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid greenyellow;
+    display: flex;
+    margin-top: 2rem;
+    padding: 0 5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    img {
+        width: 7rem;
+    }
+
+    span.maria, span.wyatt {
+        font-family: 'Tangerine', cursive;
+       font-size: 2em;
+       span {
+           color: #C79438;
+       }
+    }
+
+    span.hair {
+        font-family: 'Amatic SC', cursive;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        list-style: none outside;
+        padding: 0;
+        margin: 0;
+        height: 5rem;
+        align-items: flex-end;
+    }
+
+    li a {
+        padding: 0.8rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    li::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: '\f521';
+        display: none;
+        text-align: center;
+        margin: 0 auto 1rem auto;
+        font-size: 1.5em;
+        color: #C79438; 
+
+    }
+
+    li:hover::before {
+        display: block;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+  }

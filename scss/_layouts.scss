@@ -1,0 +1,96 @@
+.loginbar {
+    background: black;
+    height: 2.5rem;
+    box-shadow: 0px 6px 21px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-phone-volume {
+    color: #C79438;
+    font-size: 1.5em;
+    padding: 0.35rem;
+    padding-left: 5rem;
+}
+
+.loginbar span {
+    color: grey;
+    font-size: 0.9em;
+    padding-left: 0.5rem;
+}
+
+.loginbar span:hover {
+    color: #C79438;
+}
+
+body > div > header > div > div {
+    padding-right: 5rem;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+    margin: 0.1rem auto;
+    padding: 0.3rem 2rem;
+	color: #C79438;
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+   z-index: 3;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: black;
+	text-shadow: none;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+    margin: 0.1rem auto;
+    padding: 0.3rem 2rem;
+	color: #C79438;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+  
+}
+
+a.animated-button.log-in {
+    border: 2px solid #C79438;
+
+}
+a.animated-button.log-in::after {
+	background: #C79438;
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+
+}
