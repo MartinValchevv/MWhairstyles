@@ -36,90 +36,98 @@
       </header>
       <main class="site-content">
 			
-          <div class="header-img">
-</div>
-<div class="h">
-    <h2>Услуги</h2>
-</div>
-<div class="services">
-    <div class="highlights">
-        <div class="inner-div">
-            <img src="http://curly.mikado-themes.com/wp-content/uploads/2018/04/h2-custom-icon-img-1.png" alt="">
-            <h3>Акценти</h3>
-            <a href="#">Прочети повече</a>
+          <div id="form-container">
+    <form id="login" action="">
+      <div class="form-head">
+        <h1>Вход</h1>
+      </div>
+      <div class="form-body">
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="text" name="username"/>
+            <div class="placeholder">Username</div>
+            <div class="input-border"></div>
+          </div>
         </div>
-    </div>
-    <div class="care">
-        <div class="inner-div2">
-            <img src="http://curly.mikado-themes.com/wp-content/uploads/2018/04/h2-custom-icon-img-2.png" alt="">
-            <h3>Грижа за косата</h3>
-            <a href="#">Прочети повече</a>
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="password" name="password"/>
+            <div class="placeholder">Password</div>
+            <div class="input-border"></div>
+          </div>
         </div>
-    </div>
-    <div class="haircut">
-        <div class="inner-div3">
-            <img src="http://curly.mikado-themes.com/wp-content/uploads/2018/04/h2-custom-icon-img-3.png" alt="">
-            <h3>Подстригване</h3>
-            <a href="#">Прочети повече</a>
+        <div class="form-div" style="margin-bottom: 10px;">
+          <label class="remember">
+            <input type="checkbox" name="rememberMe"/><span class="checkbox"></span><span class="label-text">Запомни ме</span>
+          </label>
         </div>
-    </div>
-</div>
-<div class="subscribe">
-    <form action="#" method="POST">
-        <input type="text" id="name" placeholder="First Name">
-        <input type="text" id="name" placeholder="E-mail">
-        <input type="submit" class="btnSubscribe" value="Send">
+      </div>
+      <div class="form-footer">
+        <div class="left">
+          <button class="signup material-ripple" type="button"><span class="fas fa-user-plus"></span><span class="button-text">Регистрация</span></button>
+        </div>
+        <div class="right">
+          <button class="submit material-ripple" type="submit"><span class="fas fa-sign-in-alt"></span><span class="button-text">Вход</span></button>
+        </div>
+      </div>
     </form>
-</div>
-
-<div class="h">
-    <h2>Екип</h2>
-</div>
-
-<div class="container-team">
-    <div class="our-team">
-        <div class="pic">
-            <img src="/img/pricheska2.jpg">
+    <form id="register" action="">
+      <div class="form-head">
+        <h1>Регистрация</h1>
+      </div>
+      <div class="form-body">
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="text" name="username"/>
+            <div class="placeholder">Username</div>
+            <div class="input-border"></div>
+          </div>
         </div>
-        <h3 class="title">Мария Уайт</h3>
-        <span class="post">Web Developer</span>
-        <ul class="social">
-            <li><a href="#" class="fab fa-facebook"></a></li>
-            <li><a href="#" class="fab fa-twitter"></a></li>
-            <li><a href="#" class="fab fa-google-plus"></a></li>
-            <li><a href="#" class="fab fa-linkedin"></a></li>
-        </ul>
-    </div>
-
-    <div class="our-team">
-        <div class="pic">
-            <img src="/img/pricheska2.jpg">
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="email" name="email"/>
+            <div class="placeholder">Email</div>
+            <div class="input-border"></div>
+          </div>
         </div>
-        <h3 class="title">Kristiana</h3>
-        <span class="post">Web Designer</span>
-        <ul class="social">
-            <li><a href="#" class="fab fa-facebook"></a></li>
-            <li><a href="#" class="fab fa-twitter"></a></li>
-            <li><a href="#" class="fab fa-google-plus"></a></li>
-            <li><a href="#" class="fab fa-linkedin"></a></li>
-        </ul>
-    </div>
-
-    <div class="our-team">
-        <div class="pic">
-            <img src="/img/pricheska2.jpg">
+        <div class="form-div" style="margin-bottom: 15px;">
+          <div class="input-area">
+            <input class="input" type="password" name="password"/>
+            <div class="placeholder">Password</div>
+            <div class="input-border"></div>
+          </div>
         </div>
-        <h3 class="title">Kristiana</h3>
-        <span class="post">Web Designer</span>
-        <ul class="social">
-            <li><a href="#" class="fab fa-facebook"></a></li>
-            <li><a href="#" class="fab fa-twitter"></a></li>
-            <li><a href="#" class="fab fa-google-plus"></a></li>
-            <li><a href="#" class="fab fa-linkedin"></a></li>
-        </ul>
-    </div>
+      </div>
+      <div class="form-footer">
+        <div class="left">
+          <button class="signup material-ripple" type="button"><span class="fas fa-long-arrow-alt-left"></span><span class="button-text">Вход</span></button>
+        </div>
+        <div class="right">
+          <button class="submit material-ripple" type="submit"><span class="fas fa-user-plus"></span><span class="button-text">Регистрирай</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script>
+      $(function() {
+	
+	$('.signup').click(function() {
+		$('#register, #form-container, #login').toggleClass('toggle');
+	});
+	
+	$('.input').blur(function(){
+		tmpval = $(this).val();
+		if(tmpval == '') {
+			$(this).addClass('empty');
+			$(this).removeClass('not-empty');
+		} else {
+			$(this).addClass('not-empty');
+			$(this).removeClass('empty');
+		}
+	});	
 
-</div>
+});
+  </script>
         
       </main>
       <footer class="site-footer">

@@ -1,0 +1,98 @@
+---
+layout: site
+title: Login
+permalink: /login/
+---
+
+<div id="form-container">
+    <form id="login" action="">
+      <div class="form-head">
+        <h1>Вход</h1>
+      </div>
+      <div class="form-body">
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="text" name="username"/>
+            <div class="placeholder">Username</div>
+            <div class="input-border"></div>
+          </div>
+        </div>
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="password" name="password"/>
+            <div class="placeholder">Password</div>
+            <div class="input-border"></div>
+          </div>
+        </div>
+        <div class="form-div" style="margin-bottom: 10px;">
+          <label class="remember">
+            <input type="checkbox" name="rememberMe"/><span class="checkbox"></span><span class="label-text">Запомни ме</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-footer">
+        <div class="left">
+          <button class="signup material-ripple" type="button"><span class="fas fa-user-plus"></span><span class="button-text">Регистрация</span></button>
+        </div>
+        <div class="right">
+          <button class="submit material-ripple" type="submit"><span class="fas fa-sign-in-alt"></span><span class="button-text">Вход</span></button>
+        </div>
+      </div>
+    </form>
+    <form id="register" action="">
+      <div class="form-head">
+        <h1>Регистрация</h1>
+      </div>
+      <div class="form-body">
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="text" name="username"/>
+            <div class="placeholder">Username</div>
+            <div class="input-border"></div>
+          </div>
+        </div>
+        <div class="form-div">
+          <div class="input-area">
+            <input class="input" type="email" name="email"/>
+            <div class="placeholder">Email</div>
+            <div class="input-border"></div>
+          </div>
+        </div>
+        <div class="form-div" style="margin-bottom: 15px;">
+          <div class="input-area">
+            <input class="input" type="password" name="password"/>
+            <div class="placeholder">Password</div>
+            <div class="input-border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="form-footer">
+        <div class="left">
+          <button class="signup material-ripple" type="button"><span class="fas fa-long-arrow-alt-left"></span><span class="button-text">Вход</span></button>
+        </div>
+        <div class="right">
+          <button class="submit material-ripple" type="submit"><span class="fas fa-user-plus"></span><span class="button-text">Регистрирай</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script>
+      $(function() {
+	
+	$('.signup').click(function() {
+		$('#register, #form-container, #login').toggleClass('toggle');
+	});
+	
+	$('.input').blur(function(){
+		tmpval = $(this).val();
+		if(tmpval == '') {
+			$(this).addClass('empty');
+			$(this).removeClass('not-empty');
+		} else {
+			$(this).addClass('not-empty');
+			$(this).removeClass('empty');
+		}
+	});	
+
+});
+  </script>
