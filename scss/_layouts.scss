@@ -7,6 +7,16 @@
     align-items: center;
 }
 
+.nav-toggle i {
+	color: #C79438;
+	padding-right: 1rem;
+	font-size: 2em;
+}
+
+.nav-toggle {
+	display: none;
+}
+
 .fa-phone-volume {
     color: #C79438;
     font-size: 1.5em;
@@ -17,7 +27,8 @@
 .loginbar span {
     color: grey;
     font-size: 0.9em;
-    padding-left: 0.5rem;
+	padding-left: 0.5rem;
+	font-family: 'Poiret One', cursive;
 }
 
 .loginbar span:hover {

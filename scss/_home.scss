@@ -1,0 +1,87 @@
+.header-img {
+    margin-top: 1rem;
+    height: 30rem;
+    background: url("http://curly.mikado-themes.com/wp-content/uploads/2018/04/h1-slider3-background-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
+}
+
+.h {
+  text-align: center;
+  padding: 1rem 0;
+  h2:after {
+      content: '';
+      display: block;
+      width: 7rem;
+      height: 0.1rem;
+      background: #C79438;
+      margin: 0 auto;
+      margin-top: 1rem;
+  }
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    
+
+    .highlights {
+        flex-basis: 33.33%;
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        height: 100%;
+        .inner-div {
+            height: 100%;
+            padding: 2rem;
+            img {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .care {
+        flex-basis: 33.33%;
+        display: block;
+        text-align: center;
+        background: black;
+        height: 100%;
+        color: white;
+        padding: 2rem;
+        .inner-div2 {
+            height: 100%;
+            padding: 2rem;
+            img {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .haircut {
+        flex-basis: 33.33%;
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        height: 100%;
+        .inner-div3 {
+            height: 100%;
+            padding: 2rem;
+            img {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .highlights:hover, .care:hover, .haircut:hover {
+        .inner-div, .inner-div2, .inner-div3 {
+            border: 2px solid #C79438;
+            transition: all .2s ease-in-out;
+            transform: scale(0.95);
+        }
+    }
+}

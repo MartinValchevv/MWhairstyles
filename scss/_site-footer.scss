@@ -1,3 +1,124 @@
 .site-footer {
-    
+    background: black; 
+    padding: 3rem 3rem 0 3rem;
+    h4 {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.top-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container-brand-info {
+    flex-basis: 25%;
+    padding-right: 2rem;
+    height: 25vw;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    p {
+        color: white;
+        width: 100%;
+    }
+    .social-icon {
+
+        i {
+            color: white;
+            padding: 0 1rem;
+            border-right: 1px solid white;
+        }
+
+        i:hover {
+            color: #C79438;
+        }
+       
+        
+    }
+}
+
+.container-contact-info {
+    flex-basis: 25%;
+    padding-right: 2rem;
+    height: 25vw;
+
+}
+
+.container-worktime-info {
+    flex-basis: 25%;
+    padding-right: 2rem;
+    height: 25vw;
+    p {
+        padding-bottom: 0;
+    }
+
+}
+
+.container-maps-info {
+    flex-basis: 25%;
+    padding-right: 2rem;
+    height: 25vw;
+    img {
+        padding-top: 2rem;
+    }
+}
+
+body > div > footer > div > div.container-brand-info > div > a:nth-child(1) > i {
+    padding-left: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .site-footer {
+        height: inherit;
+    }
+
+    .top-holder {
+        display: block;
+    }
+
+    .container-brand-info {
+        height: inherit;
+        padding-bottom: 2rem;
+        img {
+           display: block;
+           margin: 0 auto;
+        }
+        p {
+            padding-top: 1rem;
+            text-align: center;
+        }
+        .social-icon {
+            text-align: center;
+        }
+    }
+
+    .container-contact-info {
+        height: inherit;
+        padding-bottom: 2rem;
+    }
+
+    .container-worktime-info {
+        height: inherit;
+        padding-bottom: 2rem;
+    }
+
+    .container-maps-info {
+        height: inherit;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
