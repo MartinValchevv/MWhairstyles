@@ -1,0 +1,52 @@
+.price-listing {
+    margin-top: 1rem;
+    // height: 35rem;
+    background: url('http://curly.mikado-themes.com/wp-content/uploads/2018/04/p-parallax-img-1.jpg');
+    background-attachment: fixed;
+    background-position: center top !important;
+    background-size: cover;
+    box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .woman {
+        padding: 3rem;
+    }
+   .category {
+       width: 30rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding-bottom: 1rem;
+       .type-category {
+           background: #C79438; 
+           padding: 1rem;
+           border-radius: 4rem;
+           letter-spacing: 0.15rem;
+       }
+
+       .price-category {
+        background: #C79438; 
+        padding: 1rem;
+        border-radius: 4rem;
+        letter-spacing: 0.15rem;
+       }
+   }
+   ul {
+       padding: 1rem;
+   }
+
+   li {
+       list-style: none;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding-bottom: 1rem;
+   }
+
+   span {
+       font-weight: bold;
+   }
+}
+

@@ -2,16 +2,16 @@
 @import 'responsive';
 @import 'variables';
 @import 'reset';
-// @import 'animations';
+@import 'animations';
 @import 'typography';
-// @import 'forms';
-// @import 'buttons';
 
 @import 'layouts';
 @import 'navigation';
 
 @import 'home';
 @import 'login';
+@import 'about';
+@import 'services';
 @import 'site-footer';
 
 

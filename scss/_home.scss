@@ -193,9 +193,10 @@
     display: block;
     font-size: 20px;
     font-weight: 600;
-    color: #2e282a;
+    color: black;
     text-transform: uppercase;
     margin: 0 0 7px 0;
+    letter-spacing: 0.1em;
 }
 .our-team .post{
     display: block;
@@ -203,6 +204,7 @@
     color: #C79438;
     text-transform: capitalize;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 .our-team .social{
     padding: 0;
@@ -228,6 +230,9 @@
 .our-team:hover .social li a{
     background: #C79438;
     color: #fff;
+}
+.our-team:hover {
+    animation: jump 0.9s ease forwards;
 }
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
