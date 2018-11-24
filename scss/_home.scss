@@ -232,7 +232,7 @@
     color: #fff;
 }
 .our-team:hover {
-    animation: jump 0.9s ease forwards;
+    animation: jumpToTop 0.3s ease forwards;
 }
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }

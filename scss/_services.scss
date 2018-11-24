@@ -1,6 +1,5 @@
 .price-listing {
     margin-top: 1rem;
-    // height: 35rem;
     background: url('http://curly.mikado-themes.com/wp-content/uploads/2018/04/p-parallax-img-1.jpg');
     background-attachment: fixed;
     background-position: center top !important;
@@ -10,8 +9,21 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 2rem;
     .woman {
         padding: 3rem;
+        box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
+        margin-bottom: 3rem;
+    }
+
+    .woman:hover {
+        animation: jumpToTop 0.3s ease forwards;
+        background: rgba($color: black, $alpha: 0.5);
+        transition: background 0.6s ease, color 0.6s ease;
+        color: white;
+        .type-category,  .price-category {
+            color: black;
+        }
     }
    .category {
        width: 30rem;

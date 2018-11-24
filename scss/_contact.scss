@@ -1,0 +1,133 @@
+#contact {
+    width: 100%;
+    height: 100vh;
+   background: url('/img/map-bg.jpg');
+    overflow: hidden;
+    padding-bottom: 200px;
+   
+  }
+
+  .all-info {
+      background: rgba($color: #111, $alpha: 0.8);
+      height: 50rem
+  }
+
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 6px;
+    color: #C79438; 
+    margin-bottom: 25px;
+  }
+  
+  .contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+    display: flex;
+  }
+  
+  .form-horizontal {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     width: 50%;
+     margin-right: 4rem;
+  }
+
+  .form-control, textarea {
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 2px solid #C79438;
+    padding-left: 0.4rem;
+    border-radius: 0.3rem;
+  }
+
+  .form-control:focus::placeholder, textarea:focus::placeholder {
+      color: transparent;
+  }
+
+  .send-button {
+    height: 2rem;
+    width: 100%;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    font-size: 16px;
+    background: #C79438;
+    border: none;
+    cursor: pointer;
+  }
+
+  .fa-paper-plane {
+      margin-top: 0.4rem;
+  }
+  
+  .btn-send {
+    width: 100%;
+    height: 2rem;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .btn-send:hover {
+    transform: translate3d(0, -1.6rem, 0);
+  }
+
+ #name:focus, #email:hover, #txt:focus {
+    border: 2px solid #C79438;
+ }
+
+
+
+ .direct-contact-container {
+     display: block;
+     width: 50%;
+     background: transparent;
+
+     hr {
+        border-color: rgba(#C79438, 0.8); 
+      }
+
+     ul {
+         list-style: none;
+         padding: 0 0 2rem 0;
+         i {
+             color: #C79438;
+             padding-right: 1rem;
+         }
+
+         li {
+             padding-bottom: 1rem;
+         }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .gmail {
+            font-size: 1em;
+        }
+
+     }
+
+     .social-media-list {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 5rem;
+     }
+ }
