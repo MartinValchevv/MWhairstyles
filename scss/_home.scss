@@ -139,8 +139,11 @@
             outline: none;
             letter-spacing: 0.25em;
             }
-        input:focus {
+        input:focus{
             border: 2px solid #C79438;
+        }    
+        input:focus::placeholder{
+            color: transparent;
         }    
         .btnSubscribe {
             width: 8rem;
