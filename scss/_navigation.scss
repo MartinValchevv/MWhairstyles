@@ -1,6 +1,7 @@
 #nav-main-toggle {
     display: none;
 }
+
   
   .navbar {
     background-color: white;
@@ -78,15 +79,31 @@
 
     li a:hover {
         color: #C79438; 
-        transition: color 0.3s ease;
+        transition: all 0.3s ease;
     }
-
 
     li:hover::before {
         display: block;
+        transition: all 0.3s ease;
+    }
+
+    .active  {
+        color: #C79438; 
+    }
+
+    .active-li::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: '\f521';
+        display: block;
+        text-align: center;
+        margin: 0 auto 1rem auto;
+        font-size: 1.35em;
+        color: #C79438; 
     }
 
   }
+
 
 
 
@@ -106,20 +123,10 @@
         padding: 0;
         justify-content: center;
         align-items: center;
-
-        div  {
-           display: none;
-        }
-
-        ul {
-            display: none;
-        }
     }
 
-    // .nav-toggle:checked {
-    //     .navbar{
-    //         display: none;
-    //     }
+    // #nav-toggle-style:checked {
+       
     // }
    
   }

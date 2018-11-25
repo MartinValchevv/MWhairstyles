@@ -7,6 +7,38 @@
     background-attachment: fixed;
     background-position: center; 
     box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        width: 50rem;
+        text-align: center;
+        margin: 0 auto;
+        color: #C79438;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 3rem;
+        letter-spacing: 0.2rem;
+        animation: navitemin 0.8s ease-in-out forwards;
+        cursor: pointer;
+    }
+
+    h1:hover + h4 {
+        visibility: visible; 
+        animation: navitemin 1.4s ease-in-out both;
+    }
+
+    h4 {
+        width: 30rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem;
+        background: #C79438;
+        border-radius: 3rem;
+        font-weight: bold;
+        visibility: hidden;
+    }
 }
 
 .h {
