@@ -1,0 +1,35 @@
+---
+layout: site
+title: Gallery
+permalink: /gallery/
+---
+
+<div class="container">
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+</div>
+
+<script>
+const items = document.querySelectorAll(".grid-item");
+
+    items.forEach(item => item.addEventListener("mouseover",function(){
+        
+        for (var i = 0; i < items.length; i++) {
+        items[i].classList.toggle('invisible');
+        }
+        item.classList.add("visible");
+        
+    }));
+    
+    items.forEach(item => item.addEventListener("mouseleave",function(){
+        for (var i = 0; i < items.length; i++) {
+        items[i].classList.toggle('invisible');
+        }
+        item.classList.remove("visible");
+    }));
+</script>

@@ -125,8 +125,13 @@
         align-items: center;
     }
 
-    // #nav-toggle-style:checked {
-       
-    // }
+    #nav-main-toggle:checked ~ header > nav{
+        display: block;
+        background: #C79438;
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+        
+    }
    
   }

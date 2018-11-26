@@ -1,15 +1,17 @@
 #contact {
     width: 100%;
     height: 100vh;
-   background: url('https://martinvalchevv.github.io/MWhairstyles/img/map-bg.jpg');
+   background: url('https://martinvalchevv.github.io/MWhairstyles/img/map-bg.jpg') no-repeat;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
     padding-bottom: 200px;
    
   }
 
   .all-info {
       background: rgba($color: #111, $alpha: 0.8);
-      height: 50rem
+      height: 100vh;
   }
 
   .section-header {
