@@ -72,32 +72,3 @@
 	cursor:pointer;
 }
 
-
-
-@media (max-width:500px) {
-	
-	.container{
-	width:80%;
-	margin:10px auto;
-	display:grid;
-	grid-gap:20px;
-	height:auto;
-	color:black;
-	grid-template-columns:auto;
-}
-	
-	.grid-item:nth-child(1n+1){
-		grid-row-start:auto;
-		grid-column-start:auto;
-		height:300px;
-}
-	.grid-item{
-	transition:all 0.1s;
-}
-.grid-item:hover{
-	transform:scale(1.02);
-	border: 2px solid #C79438;
-}
-
-	
-}

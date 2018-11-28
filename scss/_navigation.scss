@@ -57,6 +57,10 @@
         align-items: flex-end;
     }
 
+    .responsive-hide {
+        display: none;
+    }
+
     li a {
         padding: 0.8rem;
         text-decoration: none;
@@ -107,7 +111,7 @@
 
 
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     body > div > header > div > div {
         display: none;
     }
@@ -123,15 +127,69 @@
         padding: 0;
         justify-content: center;
         align-items: center;
+        .maria, .wyatt, ul{
+            display: none;
+        }
+    }
+
+    #nav-main-toggle:checked ~ header > .loginbar {
+        label {
+            z-index: 1010;
+            .fa-bars:before {
+                content: '\f00d';
+                position: fixed;
+                top: 2px; right: 10px;
+                animation: jump 0.1s 1 ease-in-out forwards;
+            }
+        }
     }
 
     #nav-main-toggle:checked ~ header > nav{
         display: block;
-        background: #C79438;
+        background: rgba($color: white, $alpha: 0.9);
         z-index: 1000;
-        height: 100vh;
-        width: 100%;
-        
+        position: fixed;
+	top: 0; left: 0; right: 0; bottom: 0;
+        margin: 0;
+        .navbar-brand, .maria, .wyatt {
+            display: none;
+        }
+        .active-li::before {
+            display: block;
+        }
+        ul {
+            display: block;
+            text-align: center;
+        }
+
+        .responsive-hide {
+            display: block;
+        }
+
+        li {
+            margin: 2rem 0;
+            border-bottom: 1px solid #C79438;
+            box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+            animation: navitemin 1s 1 ease forwards;
+            opacity: 0;
+            transform: scale(0.1) translate(0, 3rem);
+        }
+
+        @for $i from 1 through 6 {
+            li:nth-child(#{$i}) { animation-delay: $i * 0.15s; }
+        }
+
+        li::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: '\f521';
+            display: block;
+            text-align: center;
+            margin: 0 auto 1rem auto;
+            font-size: 1.35em;
+            color: #C79438; 
+        }
+
     }
    
-  }
+}

@@ -1,25 +1,195 @@
-$breakpoints: (
-    "phone": 400px,
-    "phone-wide": 480px,
-    "phablet": 560px,
-    "tablet-small": 640px,
-    "tablet": 768px,
-    "tablet-wide": 1024px,
-    "desktop": 1248px,
-    "desktop-wide": 1440px
-);
+@media screen and (max-width: 480px) {
 
-@mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map-get($breakpoints, $width );
-        @if $type == max {
-            $width: $width - 1px;
+    // Home page
+    .site-content {
+        .header-img h1 {
+            width: 90%;
         }
-        $parent: &;
-        @media screen and (#{$type}-width: $width) {
-            @at-root #{$parent} {
-                @content;
+
+        .header-img h4 {
+            width: 95%;
+        }
+
+        .services {
+            display: block;
+            height: 100%;
+        }
+
+        .subscribe form {
+            display: block;
+            padding: 3rem;
+            input {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            .btnSubscribe {
+                margin-bottom: 0;
+            }
+        }
+
+        .container-team {
+            display: block;
+        }
+    }
+
+    // About us Page
+
+    .site-content {
+        .container-about .about-content{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    // Price page
+
+    .site-content {
+        .price-listing {
+           display: block;
+           .woman {
+               padding: 0.5rem;
+           }
+           .category {
+               width: 100%;
+           }
+        }
+    }
+
+    // Gellery page
+
+    .site-content {
+        .container {
+             display: grid;
+             grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+            width: 80%;
+             grid-gap: 30px;
+            margin: 2rem auto;
+            height: auto;
+           
+            .grid-item:nth-child(1n+1) {
+                grid-row-start:auto;
+                grid-column-start:auto;
+                height:300px;
             }
         }
     }
-}
+
+    // Contact page
+
+    .site-content {
+        #contact {
+            padding-bottom: 0;
+            height: 100%;
+            .all-info {
+                height: 100%;
+            }
+            .section-header {
+                margin: 0;
+                padding-top: 2rem;
+            }
+        }
+        .contact-wrapper {
+            display: block;
+            .form-horizontal {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .direct-contact-container {
+                width: 80%;
+                margin: 2.5rem auto;
+            }
+        }
+    }
+
+    // Login page
+
+    .site-content {
+        #form-container {
+            height: 100%;
+            width: 95%;
+        }
+        #form-container.toggle {
+            height: 100%;
+            padding-bottom: 2rem;
+        }
+        .form-body {
+            padding: 0 0.5rem;
+        }
+        .input {
+            width: 98%;
+        }
+        @media screen and (max-width: 376px) {
+            .input {
+                width: 88%;
+            }
+            .form-footer .right {
+                justify-content: space-around;
+                margin-right: 2.5rem;
+            }
+        }
+        @media screen and (max-width: 361px) {
+            .input {
+                width: 84%;
+            }
+            .form-footer .right {
+                justify-content: space-around;
+                margin-right: 3.6rem;
+            }
+        }
+        @media screen and (max-width: 321px) {
+            .input {
+                width: 74%;
+            }
+            .form-footer .right {
+                justify-content: space-around;
+                margin-right: 6.8rem;
+            }
+        }
+    }
+
+
+    // Footer
+
+    .site-footer {
+        .top-holder {
+            display: block;
+        }
+
+        .container-brand-info {
+            height: inherit;
+            padding-bottom: 2rem;
+            img {
+               display: block;
+               margin: 0 auto;
+            }
+            p {
+                padding-top: 1rem;
+                text-align: center;
+            }
+            .social-icon {
+                text-align: center;
+            }
+        }
+
+        .container-contact-info {
+            height: inherit;
+            padding-bottom: 2rem;
+        }
+    
+        .container-worktime-info {
+            height: inherit;
+            padding-bottom: 2rem;
+        }
+    
+        .container-maps-info {
+            height: inherit;
+            img {
+                display: block;
+                margin: 0 auto;
+                padding: 2rem 0;
+            }
+        }
+    }
+
+    
+  }
