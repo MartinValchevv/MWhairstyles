@@ -1,3 +1,5 @@
+// Mobile phones
+
 @media screen and (max-width: 480px) {
 
     // Home page
@@ -193,3 +195,141 @@
 
     
   }
+
+
+  // Tablet 1024px
+
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .site {
+
+        .navbar {
+            padding: 0 2.5rem;
+            div {
+                left: 9rem;
+            }
+        }
+
+        .services {
+            height: 100%;
+            display: block;
+        }
+
+        .subscribe {
+            input {
+                margin-right: 5rem;
+            }
+        }
+
+        .container-about {
+            height: 65rem;
+        }
+
+        .woman {
+            margin: 0 auto 3rem auto;
+        }
+
+        .container {
+            grid-template-columns: 15rem 15rem 15rem;
+            grid-template-rows: 20rem 20rem 20rem;
+        }
+
+        #contact {
+            height: 70vh;
+        }
+    }
+
+  }
+
+
+  // Tablet 768px
+
+  @media screen and (max-width: 768px) and (min-width: 480px) {
+
+    .site {
+        .navbar {
+            padding: 0 1.5rem;
+            div {
+                display: none;
+            }
+        }
+
+        .loginbar {
+            .fa-phone-volume {
+                padding: .35rem .35rem .35rem 2rem;
+            }
+            div {
+                padding-right: 2rem;
+            }
+        }
+
+        .header-img {
+            h1 {
+                width: 90%;
+            }
+        }
+
+        .container-team {
+            display: block;
+        }
+
+        .container-about {
+            height: 100%;
+            padding: 5rem;
+        }
+
+        .container {
+            grid-template-columns: 10rem 10rem 10rem;
+            grid-template-rows: 15rem 15rem 15rem;
+        }
+
+        #contact {
+            height: 100%;
+            padding-bottom: 0;
+            .all-info {
+                height: 100%;
+            }
+            .contact-wrapper {
+                display: block;
+                .form-horizontal {
+                    margin: 0 auto;
+                    padding-bottom: 3rem;
+                }
+
+                .direct-contact-container {
+                    margin: 0 auto;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    .site-footer {
+        .top-holder {
+            display: block;
+        }
+
+        .container-brand-info {
+            margin-bottom: 2rem;
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 1600px) {
+    .site {
+         #form-container {
+            height: 21.7rem;
+        }
+
+        #form-container.toggle {
+            height: 23rem;
+        }
+
+        #register {
+            top: 400px;
+        }
+    }
+}
