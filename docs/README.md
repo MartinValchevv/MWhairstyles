@@ -1,3 +1,3 @@
 # MWhairstyles
 
-[https://martinvalchevv.github.io/MWhairstyles/]
+https://martinvalchevv.github.io/MWhairstyles/
