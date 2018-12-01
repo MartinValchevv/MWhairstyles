@@ -1,6 +1,6 @@
 .container-about {
     margin-top: 1rem;
-    height: 35rem;
+    height: 100%;
     background: url('http://curly.mikado-themes.com/wp-content/uploads/2018/04/p-parallax-img-1.jpg');
     background-attachment: fixed;
     background-position: center top !important;
@@ -11,11 +11,11 @@
 
     .about-content {
         width: 40rem;
-        height: 20rem;
+        height: 100%;
        background: rgba(black, 0.3);
        text-align: center;
-       margin-left: 3rem;
        box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
+       margin: 5rem 3rem;
        animation: slideInAbout 0.9s ease forwards;
 
        h1 {
@@ -24,10 +24,20 @@
            animation: slideInAbout 1.6s ease-in forwards;
        }
        p {
-           text-align: center;
-           padding: 2rem;
+           text-align: left;
+           width: 100%;
+           padding: 2rem 2rem 0 2rem;
            font-weight: bold;
-           animation: slideInAbout 2.2s ease-in forwards;
+           animation: scaleAnimation 2s ease-in forwards;
+           img {
+            float: right;
+            width: 13rem;
+            height: 13rem;
+            margin: 0.5rem;
+           }
+       }
+       .secondP {
+           padding: 2rem;
        }
     }
 

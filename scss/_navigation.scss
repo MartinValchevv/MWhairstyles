@@ -15,12 +15,14 @@
 
     img {
         width: 7rem;
+        animation: slideInAbout 1s ease-in forwards;
     }
 
     span.maria, span.wyatt{
         font-family: 'Tangerine', cursive;
        font-size: 3.5em;
        text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
+       animation: scaleAnimation 1.2s ease-in forwards;
        span {
            color: #C79438;
        }
