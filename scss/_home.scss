@@ -3,6 +3,9 @@
     height: 30rem;
     background: url("http://curly.mikado-themes.com/wp-content/uploads/2018/04/h1-slider3-background-img.jpg");
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
