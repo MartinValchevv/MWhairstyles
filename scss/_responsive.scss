@@ -1,3 +1,341 @@
+// // Mobile phones
+
+// @media screen and (max-width: 480px) {
+
+//     // Home page
+//     .site-content {
+//         .header-img h1 {
+//             width: 90%;
+//             padding: 0.5rem;
+//         }
+
+//         .header-img h4 {
+//             width: 95%;
+//         }
+
+//         .services {
+//             display: block;
+//             height: 100%;
+//         }
+
+//         .subscribe form {
+//             display: block;
+//             padding: 3rem;
+//             input {
+//                 width: 100%;
+//                 margin-bottom: 0.5rem;
+//             }
+//             .btnSubscribe {
+//                 margin-bottom: 0;
+//             }
+//         }
+
+//         .container-team {
+//             display: block;
+//         }
+//     }
+
+//     // About us Page
+
+//     .site-content {
+//         .container-about .about-content{
+//             width: 90%;
+//             margin: 2rem auto;
+//         }
+//     }
+
+//     // Price page
+
+//     .site-content {
+//         .price-listing {
+//            display: block;
+//            .woman {
+//                padding: 0.5rem;
+//            }
+//            .category {
+//                width: 100%;
+//            }
+//         }
+//     }
+
+//     // Gellery page
+
+//     .site-content {
+//         .container {
+//              display: grid;
+//              grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+//             width: 80%;
+//              grid-gap: 30px;
+//             margin: 2rem auto;
+//             height: auto;
+           
+//             .grid-item:nth-child(1n+1) {
+//                 grid-row-start:auto;
+//                 grid-column-start:auto;
+//                 height:300px;
+//             }
+//         }
+//     }
+
+//     // Contact page
+
+//     .site-content {
+//         #contact {
+//             padding-bottom: 0;
+//             height: 100%;
+//             .all-info {
+//                 height: 100%;
+//             }
+//             .section-header {
+//                 margin: 0;
+//                 padding-top: 2rem;
+//             }
+//         }
+//         .contact-wrapper {
+//             display: block;
+//             .form-horizontal {
+//                 width: 80%;
+//                 margin: 0 auto;
+//             }
+//             .direct-contact-container {
+//                 width: 80%;
+//                 margin: 2.5rem auto;
+//             }
+//         }
+//     }
+
+//     // Login page
+
+//     .site-content {
+//         #form-container {
+//             height: 100%;
+//             width: 95%;
+//         }
+//         #form-container.toggle {
+//             height: 100%;
+//             padding-bottom: 2rem;
+//         }
+//         .form-body {
+//             padding: 0 0.5rem;
+//         }
+//         .input {
+//             width: 98%;
+//         }
+//         @media screen and (max-width: 376px) {
+//             .input {
+//                 width: 88%;
+//             }
+//             .form-footer .right {
+//                 justify-content: space-around;
+//                 margin-right: 2.5rem;
+//             }
+//         }
+//         @media screen and (max-width: 361px) {
+//             .input {
+//                 width: 84%;
+//             }
+//             .form-footer .right {
+//                 justify-content: space-around;
+//                 margin-right: 3.6rem;
+//             }
+//         }
+//         @media screen and (max-width: 321px) {
+//             .input {
+//                 width: 74%;
+//             }
+//             .form-footer .right {
+//                 justify-content: space-around;
+//                 margin-right: 6.8rem;
+//             }
+//         }
+//     }
+
+
+//     // Footer
+
+//     .site-footer {
+//         .top-holder {
+//             display: block;
+//         }
+
+//         .container-brand-info {
+//             height: inherit;
+//             padding-bottom: 2rem;
+//             img {
+//                display: block;
+//                margin: 0 auto;
+//             }
+//             p {
+//                 padding-top: 1rem;
+//                 text-align: center;
+//             }
+//             .social-icon {
+//                 text-align: center;
+//             }
+//         }
+
+//         .container-contact-info {
+//             height: inherit;
+//             padding-bottom: 2rem;
+//         }
+    
+//         .container-worktime-info {
+//             height: inherit;
+//             padding-bottom: 2rem;
+//         }
+    
+//         .container-maps-info {
+//             height: inherit;
+//             img {
+//                 display: block;
+//                 margin: 0 auto;
+//                 padding: 2rem 0;
+//             }
+//         }
+//     }
+
+    
+//   }
+
+
+//   // Tablet 1024px
+
+//   @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+//     .site {
+
+//         .navbar {
+//             padding: 0 2.5rem;
+//             div {
+//                 left: 9rem;
+//             }
+//         }
+
+//         .services {
+//             height: 100%;
+//             display: block;
+//         }
+
+//         .subscribe {
+//             input {
+//                 margin-right: 5rem;
+//             }
+//         }
+
+//         .container-about {
+//             height: 100%;
+//         }
+
+//         .woman {
+//             margin: 0 auto 3rem auto;
+//         }
+
+//         .container {
+//             grid-template-columns: 15rem 15rem 15rem;
+//             grid-template-rows: 20rem 20rem 20rem;
+//         }
+
+//         #contact {
+//             height: 70vh;
+//         }
+//     }
+
+//   }
+
+
+//   // Tablet 768px
+
+//   @media screen and (max-width: 768px) and (min-width: 480px) {
+
+//     .site {
+//         .navbar {
+//             padding: 0 1.5rem;
+//             div {
+//                 display: none;
+//             }
+//         }
+
+//         .loginbar {
+//             .fa-phone-volume {
+//                 padding: .35rem .35rem .35rem 2rem;
+//             }
+//             div {
+//                 padding-right: 2rem;
+//             }
+//         }
+
+//         .header-img {
+//             h1 {
+//                 width: 90%;
+//             }
+//         }
+
+//         .container-team {
+//             display: block;
+//         }
+
+//         .container-about {
+//             height: 100%;
+//             padding: 5rem;
+//         }
+
+//         .container {
+//             grid-template-columns: 10rem 10rem 10rem;
+//             grid-template-rows: 15rem 15rem 15rem;
+//         }
+
+//         #contact {
+//             height: 100%;
+//             padding-bottom: 0;
+//             .all-info {
+//                 height: 100%;
+//             }
+//             .contact-wrapper {
+//                 display: block;
+//                 .form-horizontal {
+//                     margin: 0 auto;
+//                     padding-bottom: 3rem;
+//                 }
+
+//                 .direct-contact-container {
+//                     margin: 0 auto;
+//                     padding-bottom: 3rem;
+//                 }
+//             }
+//         }
+//     }
+
+//     .site-footer {
+//         .top-holder {
+//             display: block;
+//         }
+
+//         .container-brand-info {
+//             margin-bottom: 2rem;
+//         }
+//     }
+
+
+// }
+
+
+// @media screen and (min-width: 1600px) {
+//     .site {
+//          #form-container {
+//             height: 21.7rem;
+//         }
+
+//         #form-container.toggle {
+//             height: 23rem;
+//         }
+
+//         #register {
+//             top: 400px;
+//         }
+//     }
+// }
+
+
 // Mobile phones
 
 @media screen and (max-width: 480px) {
@@ -62,6 +400,7 @@
 
     .site-content {
         .container {
+             display: -ms-grid;
              display: grid;
              grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
             width: 80%;
@@ -70,8 +409,10 @@
             height: auto;
            
             .grid-item:nth-child(1n+1) {
-                grid-row-start:auto;
-                grid-column-start:auto;
+                -ms-grid-row:auto;
+                    grid-row-start:auto;
+                -ms-grid-column:auto;
+                    grid-column-start:auto;
                 height:300px;
             }
         }
@@ -126,7 +467,8 @@
                 width: 88%;
             }
             .form-footer .right {
-                justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
                 margin-right: 2.5rem;
             }
         }
@@ -135,7 +477,8 @@
                 width: 84%;
             }
             .form-footer .right {
-                justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
                 margin-right: 3.6rem;
             }
         }
@@ -144,7 +487,8 @@
                 width: 74%;
             }
             .form-footer .right {
-                justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
                 margin-right: 6.8rem;
             }
         }
@@ -231,8 +575,55 @@
         }
 
         .container {
+            -ms-grid-columns: 15rem 30px 15rem 30px 15rem;
             grid-template-columns: 15rem 15rem 15rem;
+            -ms-grid-rows: 20rem 30px 20rem 30px 20rem;
             grid-template-rows: 20rem 20rem 20rem;
+        }
+
+        .container > *:nth-child(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        }
+
+        .container > *:nth-child(2) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+        }
+
+        .container > *:nth-child(3) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 5;
+        }
+
+        .container > *:nth-child(4) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+        }
+
+        .container > *:nth-child(5) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 3;
+        }
+
+        .container > *:nth-child(6) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 5;
+        }
+
+        .container > *:nth-child(7) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+        }
+
+        .container > *:nth-child(8) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 3;
+        }
+
+        .container > *:nth-child(9) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 5;
         }
 
         #contact {
@@ -280,8 +671,55 @@
         }
 
         .container {
+            -ms-grid-columns: 10rem 30px 10rem 30px 10rem;
             grid-template-columns: 10rem 10rem 10rem;
+            -ms-grid-rows: 15rem 30px 15rem 30px 15rem;
             grid-template-rows: 15rem 15rem 15rem;
+        }
+
+        .container > *:nth-child(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        }
+
+        .container > *:nth-child(2) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+        }
+
+        .container > *:nth-child(3) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 5;
+        }
+
+        .container > *:nth-child(4) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+        }
+
+        .container > *:nth-child(5) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 3;
+        }
+
+        .container > *:nth-child(6) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 5;
+        }
+
+        .container > *:nth-child(7) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+        }
+
+        .container > *:nth-child(8) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 3;
+        }
+
+        .container > *:nth-child(9) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 5;
         }
 
         #contact {
