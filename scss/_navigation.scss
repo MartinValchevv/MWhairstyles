@@ -1,3 +1,202 @@
+// #nav-main-toggle {
+//     display: none;
+// }
+
+  
+//   .navbar {
+//     background-color: white;
+//     color: black;
+//     box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+//     display: flex;
+//     margin-top: 2rem;
+//     padding: 0 5rem;
+//     justify-content: space-between;
+//     align-items: flex-end;
+
+//     img {
+//         width: 7rem;
+//         animation: slideInAbout 1s ease-in forwards;
+//     }
+
+//     span.maria, span.wyatt{
+//         font-family: 'Tangerine', cursive;
+//        font-size: 3.5em;
+//        text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
+//        animation: scaleAnimation 1.2s ease-in forwards;
+//        span {
+//            color: #C79438;
+//        }
+//     }
+
+//    div {
+//     position: absolute;
+//     top: 4rem;
+//     left: 12rem;
+//    }
+
+//     span.hair {
+//         font-family: 'Tangerine', cursive;
+//         font-size: 1.5em;
+//         text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
+//     }
+
+//    div:nth-child(3) {
+//     position: absolute;
+//     top: 8rem;
+//     left: 17rem
+//    }
+
+//     .navbar-brand {
+//         padding: 0;
+//     }
+
+//     ul {
+//         display: flex;
+//         list-style: none outside;
+//         padding: 0 0 1rem 0;
+//         margin: 0;
+//         height: 5rem;
+//         align-items: flex-end;
+//     }
+
+//     .responsive-hide {
+//         display: none;
+//     }
+
+//     li a {
+//         padding: 0.8rem;
+//         text-decoration: none;
+//         color: black;
+//         font-weight: bold;
+//         font-size: 1.35em;
+//     }
+
+//     li::before{
+//         font-family: "Font Awesome 5 Free";
+//         font-weight: 900;
+//         content: '\f521';
+//         display: none;
+//         text-align: center;
+//         margin: 0 auto 1rem auto;
+//         font-size: 1.35em;
+//         color: #C79438; 
+
+//     }
+
+//     li a:hover {
+//         color: #C79438; 
+//         transition: all 0.3s ease;
+//     }
+
+//     li:hover::before {
+//         display: block;
+//         transition: all 0.3s ease;
+//     }
+
+//     .active  {
+//         color: #C79438; 
+//     }
+
+//     .active-li::before {
+//         font-family: "Font Awesome 5 Free";
+//         font-weight: 900;
+//         content: '\f521';
+//         display: block;
+//         text-align: center;
+//         margin: 0 auto 1rem auto;
+//         font-size: 1.35em;
+//         color: #C79438; 
+//     }
+
+//   }
+
+
+
+
+//   @media screen and (max-width: 480px) {
+//     body > div > header > div > div {
+//         display: none;
+//     }
+//     .fa-phone-volume {
+//         padding: .35rem .35rem .35rem 1rem;
+//     }
+
+//     .nav-toggle {
+//         display: block;
+//     }
+
+//     .navbar {
+//         padding: 0;
+//         justify-content: center;
+//         align-items: center;
+//         .maria, .wyatt, ul{
+//             display: none;
+//         }
+//     }
+
+//     #nav-main-toggle:checked ~ header > .loginbar {
+//         label {
+//             z-index: 1010;
+//             .fa-bars:before {
+//                 content: '\f00d';
+//                 position: fixed;
+//                 top: 2px; right: 10px;
+//                 animation: jump 0.1s 1 ease-in-out forwards;
+//             }
+//         }
+//     }
+
+//     #nav-main-toggle:checked ~ header > nav{
+//         display: block;
+//         background: rgba($color: white, $alpha: 0.9);
+//         z-index: 1000;
+//         position: fixed;
+// 	top: 0; left: 0; right: 0; bottom: 0;
+//         margin: 0;
+//         .navbar-brand, .maria, .wyatt {
+//             display: none;
+//         }
+//         .active-li::before {
+//             display: block;
+//         }
+//         ul {
+//             display: block;
+//             text-align: center;
+//         }
+
+//         .responsive-hide {
+//             display: block;
+//         }
+
+//         li {
+//             margin: 2rem 0;
+//             border-bottom: 1px solid #C79438;
+//             box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+//             animation: navitemin 1s 1 ease forwards;
+//             opacity: 0;
+//             transform: scale(0.1) translate(0, 3rem);
+//         }
+
+//         @for $i from 1 through 6 {
+//             li:nth-child(#{$i}) { animation-delay: $i * 0.15s; }
+//         }
+
+//         li::before {
+//             font-family: "Font Awesome 5 Free";
+//             font-weight: 900;
+//             content: '\f521';
+//             display: block;
+//             text-align: center;
+//             margin: 0 auto 1rem auto;
+//             font-size: 1.35em;
+//             color: #C79438; 
+//         }
+
+//     }
+   
+// }
+
+
 #nav-main-toggle {
     display: none;
 }
@@ -6,23 +205,32 @@
   .navbar {
     background-color: white;
     color: black;
-    box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+            box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 2rem;
     padding: 0 5rem;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 
     img {
         width: 7rem;
-        animation: slideInAbout 1s ease-in forwards;
+        -webkit-animation: slideInAbout 1s ease-in forwards;
+                animation: slideInAbout 1s ease-in forwards;
     }
 
     span.maria, span.wyatt{
         font-family: 'Tangerine', cursive;
        font-size: 3.5em;
        text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
-       animation: scaleAnimation 1.2s ease-in forwards;
+       -webkit-animation: scaleAnimation 1.2s ease-in forwards;
+               animation: scaleAnimation 1.2s ease-in forwards;
        span {
            color: #C79438;
        }
@@ -51,12 +259,16 @@
     }
 
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none outside;
         padding: 0 0 1rem 0;
         margin: 0;
         height: 5rem;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
     }
 
     .responsive-hide {
@@ -85,11 +297,15 @@
 
     li a:hover {
         color: #C79438; 
+        -webkit-transition: all 0.3s ease; 
+        -o-transition: all 0.3s ease; 
         transition: all 0.3s ease;
     }
 
     li:hover::before {
         display: block;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
 
@@ -127,8 +343,12 @@
 
     .navbar {
         padding: 0;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         .maria, .wyatt, ul{
             display: none;
         }
@@ -141,7 +361,8 @@
                 content: '\f00d';
                 position: fixed;
                 top: 2px; right: 10px;
-                animation: jump 0.1s 1 ease-in-out forwards;
+                -webkit-animation: jump 0.1s 1 ease-in-out forwards;
+                        animation: jump 0.1s 1 ease-in-out forwards;
             }
         }
     }
@@ -171,14 +392,18 @@
         li {
             margin: 2rem 0;
             border-bottom: 1px solid #C79438;
-            box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
-            animation: navitemin 1s 1 ease forwards;
+            -webkit-box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+                    box-shadow: 2px 16px 26px -15px rgba(0,0,0,0.37);
+            -webkit-animation: navitemin 1s 1 ease forwards;
+                    animation: navitemin 1s 1 ease forwards;
             opacity: 0;
-            transform: scale(0.1) translate(0, 3rem);
+            -webkit-transform: scale(0.1) translate(0, 3rem);
+                -ms-transform: scale(0.1) translate(0, 3rem);
+                    transform: scale(0.1) translate(0, 3rem);
         }
 
         @for $i from 1 through 6 {
-            li:nth-child(#{$i}) { animation-delay: $i * 0.15s; }
+            li:nth-child(#{$i}) { -webkit-animation-delay: $i * 0.15s; animation-delay: $i * 0.15s; }
         }
 
         li::before {

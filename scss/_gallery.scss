@@ -1,26 +1,136 @@
+// .container{
+// 	width: 100%;
+// 	margin: 2rem auto;
+// 	display: grid;
+//     grid-gap: 1.5rem;
+//     justify-content: center;
+// 	color: black;
+//     grid-template-columns: 20rem 20rem 20rem;
+//     grid-template-rows: 25rem 25rem 25rem;
+// }
+
+// .grid-item{
+//     box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
+// 	background-size:cover !important;
+// 	background-repeat:no-repeat;
+// }
+
+// .grid-item:nth-child(1){
+//     grid-column-start: span 2;
+    
+// }
+// .grid-item:nth-child(4){
+// 	grid-column-start: span 2;
+// }
+
+
+// .grid-item:nth-child(1){
+//     background:url("../img/salon4.jpg") no-repeat;
+//     background-position: center; 
+// }
+// .grid-item:nth-child(2){
+//     background:url("../img/frizior.jpg") no-repeat;
+//     background-position: center; 
+// }
+// .grid-item:nth-child(3){
+//     background:url("../img/lak2.jpg") no-repeat;
+//     background-position: center; 
+// }
+// .grid-item:nth-child(4){
+//     background:url("../img/kozmetika.jpg") no-repeat;
+//     background-position: center; 
+// }
+// .grid-item:nth-child(5){
+//     background:url("../img/pricheska4.jpg") no-repeat;
+//     background-position: center; 
+// }
+// .grid-item:nth-child(6){
+//     background:url("../img/recepcia.jpg") no-repeat;
+//     background-position: center; 
+  
+// }
+// .grid-item:nth-child(7){
+//     background:url("../img/salon6.jpg") no-repeat;
+//     background-position: center; 
+  
+// }
+
+// .grid-item{
+// 	transition:all 0.2s;
+// }
+// .grid-item:hover{
+// 	transform:scale(1.2);
+//     border: 2px solid #C79438;
+//     z-index: 1;
+// }
+
+// .invisible{
+// 	opacity:0.5;
+// }
+// .visible{
+// 	opacity:1;
+// 	cursor:pointer;
+// }
+
+
 .container{
 	width: 100%;
 	margin: 2rem auto;
+	display: -ms-grid;
 	display: grid;
     grid-gap: 1.5rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 	color: black;
+    -ms-grid-columns: 20rem 1.5rem 20rem 1.5rem 20rem;
     grid-template-columns: 20rem 20rem 20rem;
+    -ms-grid-rows: 25rem 1.5rem 25rem 1.5rem 25rem;
     grid-template-rows: 25rem 25rem 25rem;
+}.container > *:nth-child(1){
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}.container > *:nth-child(2){
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}.container > *:nth-child(3){
+	-ms-grid-row: 1;
+	-ms-grid-column: 5;
+}.container > *:nth-child(4){
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}.container > *:nth-child(5){
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}.container > *:nth-child(6){
+	-ms-grid-row: 3;
+	-ms-grid-column: 5;
+}.container > *:nth-child(7){
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
+}.container > *:nth-child(8){
+	-ms-grid-row: 5;
+	-ms-grid-column: 3;
+}.container > *:nth-child(9){
+	-ms-grid-row: 5;
+	-ms-grid-column: 5;
 }
 
 .grid-item{
-    box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
+            box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
 	background-size:cover !important;
 	background-repeat:no-repeat;
 }
 
 .grid-item:nth-child(1){
-    grid-column-start: span 2;
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
     
 }
 .grid-item:nth-child(4){
-	grid-column-start: span 2;
+	-ms-grid-column: span 2;
+	    grid-column-start: span 2;
 }
 
 
@@ -56,10 +166,14 @@
 }
 
 .grid-item{
+	-webkit-transition:all 0.2s;
+	-o-transition:all 0.2s;
 	transition:all 0.2s;
 }
 .grid-item:hover{
-	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	    -ms-transform:scale(1.2);
+	        transform:scale(1.2);
     border: 2px solid #C79438;
     z-index: 1;
 }
@@ -71,4 +185,5 @@
 	opacity:1;
 	cursor:pointer;
 }
+
 
