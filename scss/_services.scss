@@ -1,101 +1,24 @@
-// .price-listing {
-//     margin-top: 1rem;
-//     background: url('http://curly.mikado-themes.com/wp-content/uploads/2018/04/p-parallax-img-1.jpg');
-//     background-attachment: fixed;
-//     background-position: center top !important;
-//     background-size: cover;
-//     box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     padding: 2rem;
-//     .woman {
-//         padding: 3rem;
-//         box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
-//         margin-bottom: 3rem;
-//     }
-
-//     .woman:hover {
-//         animation: jumpToTop 0.3s ease forwards;
-//         background: rgba($color: black, $alpha: 0.5);
-//         transition: background 0.6s ease, color 0.6s ease;
-//         color: white;
-//         .type-category,  .price-category {
-//             color: black;
-//         }
-//     }
-//    .category {
-//        width: 30rem;
-//        display: flex;
-//        justify-content: space-between;
-//        align-items: center;
-//        padding-bottom: 1rem;
-//        .type-category {
-//            background: #C79438; 
-//            padding: 1rem;
-//            border-radius: 4rem;
-//            letter-spacing: 0.15rem;
-//        }
-
-//        .price-category {
-//         background: #C79438; 
-//         padding: 1rem;
-//         border-radius: 4rem;
-//         letter-spacing: 0.15rem;
-//        }
-//    }
-//    ul {
-//        padding: 1rem;
-//    }
-
-//    li {
-//        list-style: none;
-//        display: flex;
-//        justify-content: space-between;
-//        align-items: center;
-//        padding-bottom: 1rem;
-//    }
-
-//    span {
-//        font-weight: bold;
-//    }
-// }
-
-
 .price-listing {
     margin-top: 1rem;
     background: url('http://curly.mikado-themes.com/wp-content/uploads/2018/04/p-parallax-img-1.jpg');
     background-attachment: fixed;
     background-position: center top !important;
     background-size: cover;
-    -webkit-box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
-            box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-shadow: inset 0px 43px 50px -5px rgba(255,255,255,1);
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 2rem;
     .woman {
         padding: 3rem;
-        -webkit-box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
-                box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
+        box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.67);
         margin-bottom: 3rem;
     }
 
     .woman:hover {
-        -webkit-animation: jumpToTop 0.3s ease forwards;
-                animation: jumpToTop 0.3s ease forwards;
+        animation: jumpToTop 0.3s ease forwards;
         background: rgba($color: black, $alpha: 0.5);
-        -webkit-transition: background 0.6s ease, color 0.6s ease;
-        -o-transition: background 0.6s ease, color 0.6s ease;
         transition: background 0.6s ease, color 0.6s ease;
         color: white;
         .type-category,  .price-category {
@@ -104,15 +27,9 @@
     }
    .category {
        width: 30rem;
-       display: -webkit-box;
-       display: -ms-flexbox;
        display: flex;
-       -webkit-box-pack: justify;
-           -ms-flex-pack: justify;
-               justify-content: space-between;
-       -webkit-box-align: center;
-           -ms-flex-align: center;
-               align-items: center;
+       justify-content: space-between;
+       align-items: center;
        padding-bottom: 1rem;
        .type-category {
            background: #C79438; 
@@ -134,15 +51,9 @@
 
    li {
        list-style: none;
-       display: -webkit-box;
-       display: -ms-flexbox;
        display: flex;
-       -webkit-box-pack: justify;
-           -ms-flex-pack: justify;
-               justify-content: space-between;
-       -webkit-box-align: center;
-           -ms-flex-align: center;
-               align-items: center;
+       justify-content: space-between;
+       align-items: center;
        padding-bottom: 1rem;
    }
 
@@ -150,4 +61,3 @@
        font-weight: bold;
    }
 }
-

@@ -1,279 +1,81 @@
-// @keyframes navitemin {
-//     from {
-//         opacity: 0;
-//         transform: translate(0, -5rem);
-
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translate(0, 0);
-//     }
-// }
-
-// @keyframes jump {
-//     0% {
-//         transform: translate(0, 0);
-//     }
-
-//     50% {
-//         transform: translate(0, -0.3rem);
-//     }
-
-//     100% {
-//         transform: translate(0, 0);
-//     }
-// }
-
-// @keyframes jumpToTop {
-//     0% {
-//         transform: translate(0, 0);
-//     }
-
-//     100% {
-//         transform: translate(0, -1rem);
-//     }
-// }
-
-// @keyframes scaleAnimation {
-//     from {
-//         opacity: 0;
-//         transform: scale(0);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: scale(1);
-//     }
-// }
-
-// @keyframes shake {
-//     0% {
-//         transform: translate(-2rem, 0);
-//     }
-
-//     25% {
-//         transform: translate(2rem, 0);
-//     }
-
-//     50% {
-//         transform: translate(-2rem, 0);
-//     }
-
-//     75% {
-//         transform: translate(2rem, 0);
-//     }
-
-//     100% {
-//         transform: translate(0, 0);
-//     }
-// }
-
-// @keyframes slideInAbout {
-//     from {
-//         opacity: 0;
-//         transform: translateX(-3rem);
-//     }
-//     to {
-//         opacity: 1;
-//         transform:  translateX(0);
-//     }
-// }
-
-
-@-webkit-keyframes navitemin {
-    from {
-        opacity: 0;
-        -webkit-transform: translate(0, -5rem);
-                transform: translate(0, -5rem);
-
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
-}
-
 @keyframes navitemin {
     from {
         opacity: 0;
-        -webkit-transform: translate(0, -5rem);
-                transform: translate(0, -5rem);
+        transform: translate(0, -5rem);
 
     }
 
     to {
         opacity: 1;
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
-}
-
-@-webkit-keyframes jump {
-    0% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
-
-    50% {
-        -webkit-transform: translate(0, -0.3rem);
-                transform: translate(0, -0.3rem);
-    }
-
-    100% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 
 @keyframes jump {
     0% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 
     50% {
-        -webkit-transform: translate(0, -0.3rem);
-                transform: translate(0, -0.3rem);
+        transform: translate(0, -0.3rem);
     }
 
     100% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
-}
-
-@-webkit-keyframes jumpToTop {
-    0% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
-
-    100% {
-        -webkit-transform: translate(0, -1rem);
-                transform: translate(0, -1rem);
+        transform: translate(0, 0);
     }
 }
 
 @keyframes jumpToTop {
     0% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 
     100% {
-        -webkit-transform: translate(0, -1rem);
-                transform: translate(0, -1rem);
-    }
-}
-
-@-webkit-keyframes scaleAnimation {
-    from {
-        opacity: 0;
-        -webkit-transform: scale(0);
-                transform: scale(0);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: translate(0, -1rem);
     }
 }
 
 @keyframes scaleAnimation {
     from {
         opacity: 0;
-        -webkit-transform: scale(0);
-                transform: scale(0);
+        transform: scale(0);
     }
 
     to {
         opacity: 1;
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-}
-
-@-webkit-keyframes shake {
-    0% {
-        -webkit-transform: translate(-2rem, 0);
-                transform: translate(-2rem, 0);
-    }
-
-    25% {
-        -webkit-transform: translate(2rem, 0);
-                transform: translate(2rem, 0);
-    }
-
-    50% {
-        -webkit-transform: translate(-2rem, 0);
-                transform: translate(-2rem, 0);
-    }
-
-    75% {
-        -webkit-transform: translate(2rem, 0);
-                transform: translate(2rem, 0);
-    }
-
-    100% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
+        transform: scale(1);
     }
 }
 
 @keyframes shake {
     0% {
-        -webkit-transform: translate(-2rem, 0);
-                transform: translate(-2rem, 0);
+        transform: translate(-2rem, 0);
     }
 
     25% {
-        -webkit-transform: translate(2rem, 0);
-                transform: translate(2rem, 0);
+        transform: translate(2rem, 0);
     }
 
     50% {
-        -webkit-transform: translate(-2rem, 0);
-                transform: translate(-2rem, 0);
+        transform: translate(-2rem, 0);
     }
 
     75% {
-        -webkit-transform: translate(2rem, 0);
-                transform: translate(2rem, 0);
+        transform: translate(2rem, 0);
     }
 
     100% {
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0);
-    }
-}
-
-@-webkit-keyframes slideInAbout {
-    from {
-        opacity: 0;
-        -webkit-transform: translateX(-3rem);
-                transform: translateX(-3rem);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform:  translateX(0);
-                transform:  translateX(0);
+        transform: translate(0, 0);
     }
 }
 
 @keyframes slideInAbout {
     from {
         opacity: 0;
-        -webkit-transform: translateX(-3rem);
-                transform: translateX(-3rem);
+        transform: translateX(-3rem);
     }
     to {
         opacity: 1;
-        -webkit-transform:  translateX(0);
-                transform:  translateX(0);
+        transform:  translateX(0);
     }
 }
-

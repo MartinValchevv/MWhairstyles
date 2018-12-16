@@ -1,85 +1,3 @@
-// .site-footer {
-//     background: black; 
-//     padding: 3rem 3rem 0 3rem;
-//     h4 {
-//         color: white;
-//         text-transform: uppercase;
-//         letter-spacing: 0.1rem;
-//     }
-
-//     p {
-//         color: white;
-//     }
-// }
-
-// .top-holder {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-
-
-// .container-brand-info {
-//     flex-basis: 25%;
-//     padding-right: 2rem;
-//     height: 25vw;
-
-//     img {
-//         width: 5rem;
-//         height: 5rem;
-//     }
-
-//     p {
-//         color: white;
-//         width: 100%;
-//     }
-//     .social-icon {
-
-//         i {
-//             color: white;
-//             padding: 0 1rem;
-//             border-right: 1px solid white;
-//         }
-
-//         i:hover {
-//             color: #C79438;
-//         }
-       
-        
-//     }
-// }
-
-// .container-contact-info {
-//     flex-basis: 25%;
-//     padding-right: 2rem;
-//     height: 25vw;
-
-// }
-
-// .container-worktime-info {
-//     flex-basis: 25%;
-//     padding-right: 2rem;
-//     height: 25vw;
-//     p {
-//         padding-bottom: 0;
-//     }
-
-// }
-
-// .container-maps-info {
-//     flex-basis: 25%;
-//     padding-right: 2rem;
-//     height: 25vw;
-//     img {
-//         padding-top: 2rem;
-//     }
-// }
-
-// body > div > footer > div > div.container-brand-info > div > a:nth-child(1) > i {
-//     padding-left: 0;
-// }
-
-
 .site-footer {
     background: black; 
     padding: 3rem 3rem 0 3rem;
@@ -95,21 +13,14 @@
 }
 
 .top-holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .container-brand-info {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
     padding-right: 2rem;
     height: 25vw;
 
@@ -139,16 +50,14 @@
 }
 
 .container-contact-info {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
     padding-right: 2rem;
     height: 25vw;
 
 }
 
 .container-worktime-info {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
     padding-right: 2rem;
     height: 25vw;
     p {
@@ -158,8 +67,7 @@
 }
 
 .container-maps-info {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
     padding-right: 2rem;
     height: 25vw;
     img {
@@ -170,5 +78,3 @@
 body > div > footer > div > div.container-brand-info > div > a:nth-child(1) > i {
     padding-left: 0;
 }
-
-
