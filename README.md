@@ -3,7 +3,6 @@
 Design of a static website of a hairdressing salon. 
 The site has adaptive design for mobile devices, tablets and Full HD screens.
 
-![](img/screenshot/MWhairstyles-2018-12-05-17_51_24.png)
 
 ## Technologies
 

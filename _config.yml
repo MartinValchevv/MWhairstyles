@@ -1,8 +1,8 @@
 # Site settings
 
-title: Салон за красота - Maria Wyatt
+title: Салон за красота
 email: martinvalchev2@gmail.com
-description: Мечтаете ли за елегантна, здраво изглеждаща коса, която изглежда перфектно? Ние ще направим вашите мечти реалност.
+description: Дизайн на сайт салон за красота
 baseurl: "/MWhairstyles" # /MWhairstyles
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
